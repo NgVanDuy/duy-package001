@@ -9,9 +9,6 @@
 
 namespace Helper\UrlHelper;
 
-use function strlen;
-use const true;
-
 class UrlHelper
 {
     public function isValidUrl($url): bool
@@ -33,12 +30,25 @@ class UrlHelper
                     $t = substr($baseUrl, 0, $tempPath);
                     return $t . $path;
                 }
-                return $baseUrl.$path;
+                return $baseUrl . $path;
             } else {
                 return $baseUrl . $path;
             }
         }
         //$baseUrl is not a valid URL
+        return false;
+    }
+
+    public function parseUrl(string $url)
+    {
+        $urlInfor = [];
+        if($this->isValidUrl($url)) {
+            echo "s";
+            $urlInfor['protocol'] = parse_url($url, PHP_URL_SCHEME);
+            $urlInfor['port'] = parse_url($url, PHP_URL_PORT);
+            $urlInfor['domain'] = parse_url($url, PHP_URL_HOST);
+            return $urlInfor;
+        }
         return false;
     }
 }
