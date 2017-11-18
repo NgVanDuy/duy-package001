@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddf8a62b-91a7-43f7-9dd5-b1ceb6439df5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UrlHelper/UrlHelper.php" afterPath="$PROJECT_DIR$/src/UrlHelper/UrlHelper.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,8 +23,8 @@
       <file leaf-file-name="UrlHelper.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/UrlHelper/UrlHelper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="42" column="7" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="42" selection-end-column="7" />
+            <state relative-caret-position="632">
+              <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
               <folding>
                 <element signature="e#121#141#0#PHP" expanded="true" />
               </folding>
@@ -243,12 +243,12 @@
       <workItem from="1510835447685" duration="4534000" />
       <workItem from="1510898842167" duration="11607000" />
       <workItem from="1510926521258" duration="5335000" />
-      <workItem from="1510985724966" duration="561000" />
+      <workItem from="1510985724966" duration="695000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33884000" />
+    <option name="totallyTimeSpent" value="34018000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
@@ -614,8 +614,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UrlHelper/UrlHelper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="42" column="7" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="42" selection-end-column="7" />
+        <state relative-caret-position="632">
+          <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
           <folding>
             <element signature="e#121#141#0#PHP" expanded="true" />
           </folding>

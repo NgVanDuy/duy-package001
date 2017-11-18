@@ -22,23 +22,23 @@ class UrlHelper
     /*
      * lối một baseUrl vào một đường dãn tương đối
      */
-//    public function mergeUrl(string $baseUrl, string $path)
-//    {
-//        if ($this->isValidUrl($baseUrl)) {
-//            if ($path[0] == "/") {
-//                $p = parse_url($baseUrl, PHP_URL_PATH);
-//                //baseUrl contain path
-//                if (!empty($p)) {
-//                    $tempPath = strripos($baseUrl, $p);
-//                    $t = substr($baseUrl, 0, $tempPath);
-//                    return $t . $path;
-//                }
-//                return $baseUrl.$path;
-//            } else {
-//                return $baseUrl . $path;
-//            }
-//        }
-//        //$baseUrl is not a valid URL
-//        return false;
-//    }
+    public function mergeUrl(string $baseUrl, string $path)
+    {
+        if ($this->isValidUrl($baseUrl)) {
+            if ($path[0] == "/") {
+                $p = parse_url($baseUrl, PHP_URL_PATH);
+                //baseUrl contain path
+                if (!empty($p)) {
+                    $tempPath = strripos($baseUrl, $p);
+                    $t = substr($baseUrl, 0, $tempPath);
+                    return $t . $path;
+                }
+                return $baseUrl.$path;
+            } else {
+                return $baseUrl . $path;
+            }
+        }
+        //$baseUrl is not a valid URL
+        return false;
+    }
 }
