@@ -64,5 +64,24 @@ class UrlHelperTest extends TestCase
             ['b/aaa', '/a.html', false]];
     }
 
-    
+    /**
+     * @param $url
+     * @param $partials
+     *
+     * @dataProvider parseUrlAdditionProvider
+     */
+    public function testParseUrl($url, $partials) {
+        $urlHelper = new UrlHelper();
+        $this->assertEquals($urlHelper->parseUrl($url), $partials);
+    }
+
+    public function parseUrlAdditionProvider() {
+        return [
+            //url - array of patials in url
+            ['http://www.dantri.com', ['protocol'=> 'http', 'port' => NULL, 'domain' => 'www.dantri.com']],
+            ['http://www.dantri.com/a', ['protocol'=> 'http', 'port' => NULL, 'domain' => 'www.dantri.com']],
+            ['http://www.dantri.com/a.html', ['protocol'=> 'http', 'port' => NULL, 'domain' => 'www.dantri.com']],
+            ['a\b', false]
+        ];
+    }
 }
