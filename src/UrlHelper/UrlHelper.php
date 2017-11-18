@@ -1,6 +1,5 @@
 <?php
 namespace Helper\UrlHelper;
-use function strlen;
 
 /**
  * Created by PhpStorm.
@@ -47,15 +46,16 @@ class UrlHelper
     {
         $urlInfor = [];
         if($this->isValidUrl($url)) {
-            echo "s";
             $urlInfor['protocol'] = parse_url($url, PHP_URL_SCHEME);
             $urlInfor['port'] = parse_url($url, PHP_URL_PORT);
             $urlInfor['domain'] = parse_url($url, PHP_URL_HOST);
             return $urlInfor;
         }
+        // url is not valid
         return false;
     }
 }
 
 //$t = new UrlHelper();
 //var_dump($t->mergeUrl('http://www.dantri.com/b', '/a.html'));
+//var_dump($t->parseUrl('http://www.dantri.com'));

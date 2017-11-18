@@ -10,6 +10,11 @@
 
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Helper\\": "test/"
+        }
+    },
     "authors": [
         {
             "name": "Nguyen Van Duy",
@@ -17,6 +22,7 @@
         }
     ],
     "require": {
+
     },
     "require-dev": {
         "phpunit/phpunit": "^6.4"
