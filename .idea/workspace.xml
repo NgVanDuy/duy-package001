@@ -56,8 +56,13 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
+<<<<<<< HEAD
               <first_editor relative-caret-position="220">
                 <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+=======
+              <first_editor relative-caret-position="200">
+                <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+>>>>>>> 8c13c3f4b4472873761bbf1b7a58bb976237b3f0
                 <folding />
               </first_editor>
               <second_editor />
@@ -280,12 +285,20 @@
       <workItem from="1510898842167" duration="11607000" />
       <workItem from="1510926521258" duration="5335000" />
       <workItem from="1510985724966" duration="8133000" />
+<<<<<<< HEAD
       <workItem from="1511009579784" duration="7261000" />
+=======
+      <workItem from="1511009579784" duration="7159000" />
+>>>>>>> 8c13c3f4b4472873761bbf1b7a58bb976237b3f0
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="48717000" />
+=======
+    <option name="totallyTimeSpent" value="48615000" />
+>>>>>>> 8c13c3f4b4472873761bbf1b7a58bb976237b3f0
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -642,8 +655,13 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
+<<<<<<< HEAD
           <first_editor relative-caret-position="220">
             <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+=======
+          <first_editor relative-caret-position="200">
+            <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+>>>>>>> 8c13c3f4b4472873761bbf1b7a58bb976237b3f0
             <folding />
           </first_editor>
           <second_editor />
