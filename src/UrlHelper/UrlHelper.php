@@ -1,4 +1,6 @@
 <?php
+namespace Helper\UrlHelper;
+use function strlen;
 
 /**
  * Created by PhpStorm.
@@ -7,13 +9,11 @@
  * Time: 3:15 PM
  */
 
-namespace Helper\UrlHelper;
-
 class UrlHelper
 {
     public function isValidUrl($url): bool
     {
-        return (!(filter_var($url, FILTER_VALIDATE_URL) === false)) ? true : false;
+        return (!(filter_var($url, FILTER_VALIDATE_URL)) ? false : true);
     }
 
     /*
@@ -26,9 +26,13 @@ class UrlHelper
                 $p = parse_url($baseUrl, PHP_URL_PATH);
                 //baseUrl contain path
                 if (!empty($p)) {
-                    $tempPath = strripos($baseUrl, $p);
-                    $t = substr($baseUrl, 0, $tempPath);
-                    return $t . $path;
+                    if($baseUrl[strlen($baseUrl) - 1] == "/") {
+                        $tempPath = strripos($baseUrl, $p);
+                        $t = substr($baseUrl, 0, $tempPath);
+                        return $t . $path;
+                    } else {
+                        return $baseUrl.$path;
+                    }
                 }
                 return $baseUrl . $path;
             } else {
@@ -52,3 +56,6 @@ class UrlHelper
         return false;
     }
 }
+
+//$t = new UrlHelper();
+//var_dump($t->mergeUrl('http://www.dantri.com/b', '/a.html'));
