@@ -1,0 +1,24 @@
+{
+    "name": "duy/url_helper",
+    "description": "support some function to manuplation with url",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Helper\\": "src/"
+        },
+        "class-map": {
+
+        }
+    },
+    "authors": [
+        {
+            "name": "Nguyen Van Duy",
+            "email": "duypeo96@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.4"
+    }
+}
