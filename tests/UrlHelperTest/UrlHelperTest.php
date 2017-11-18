@@ -40,5 +40,29 @@ class UrlHelperTest extends TestCase
         ];
     }
 
+    /**
+     * @param $baseUrl
+     * @param $path
+     *
+     * @dataProvider mergeUrlAdditionProvider
+     */
+    public function testMergeUrl($baseUrl, $path, $result)
+    {
+        $urlHelper = new UrlHelper();
+        $this->assertEquals($urlHelper->mergeUrl($baseUrl, $path), $result);
+    }
 
+    public function mergeUrlAdditionProvider()
+    {
+        return [
+            //baseUrl, path, result
+            ['http://www.dantri.com', '/a.html', 'http://www.dantri.com/a.html'],
+            ['http://www.dantri.com/', 'a.html', 'http://www.dantri.com/a.html'],
+            ['http://www.dantri.com/b', '/a.html', 'http://www.dantri.com/b/a.html'],
+            ['http://www.dantri.com/b/', 'a.html', 'http://www.dantri.com/b/a.html'],
+            ['http://www.dantri.com/b/', '/a.html', 'http://www.dantri.com/a.html'],
+            ['b/aaa', '/a.html', false]];
+    }
+
+    
 }
