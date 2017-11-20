@@ -42,18 +42,26 @@ class UrlHelper
         return false;
     }
 
-    public function parseUrl(string $url)
+    public function parseUrl(string $url, $component = NULL)
     {
         $urlInfor = [];
         if($this->isValidUrl($url)) {
-            $urlInfor['protocol'] = parse_url($url, PHP_URL_SCHEME);
-            $urlInfor['port'] = parse_url($url, PHP_URL_PORT);
-            $urlInfor['domain'] = parse_url($url, PHP_URL_HOST);
+            if($component !== NULL) {
+                parse_url($url, $component );
+            } else {
+                $urlInfor= parse_url($url);
+                return [
+                    'protocol' => $urlInfor['scheme'],
+                    'domain' => $urlInfor['host'],
+                    'port' => $urlInfor['port']
+                ];
+            }
             return $urlInfor;
         }
         // url is not valid
         return false;
     }
+
 }
 
 //$t = new UrlHelper();

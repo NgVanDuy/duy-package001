@@ -1,21 +1,18 @@
 <?php
 
-namespace Helper\UrlHelperTest;
-
 /**
  * Created by PhpStorm.
  * User: duype
- * Date: 11/18/2017
- * Time: 2:06 PM
+ * Date: 11/20/2017
+ * Time: 2:40 PM
  */
-
 use Helper\UrlHelper\UrlHelper;
 use PHPUnit\Framework\TestCase;
-
-require_once(dirname(__FILE__, 3) . "/vendor/autoload.php");
-
-class UrlHelperTest extends TestCase
+class UrlTest extends TestCase
 {
+
+    //require_once(dirname(__FILE__, 3) . "/vendor/autoload.php");
+
     /**
      * @param $url
      * @param $result
